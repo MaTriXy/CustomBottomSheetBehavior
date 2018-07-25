@@ -1,8 +1,25 @@
-# CustomBottomSheetBehavior like Google Maps for Android
+# CustomBottomSheetBehavior like Google Maps for Android [ ![Download](https://api.bintray.com/packages/mahc/maven/CustomBottomSheetBehavior/images/download.svg) ](https://bintray.com/mahc/maven/CustomBottomSheetBehavior/_latestVersion)
 Android Studio Project using Support Library focused on get Google Maps 3 states behavior including background image parallax and toolbars animations.
 
-## Example
-[![CustomBottomSheetBehavior](https://raw.githubusercontent.com/akan44/CustomBottomSheetBehavior/master/CustomBottomSheetBehaviorLikeGoogleMaps3states.gif)]
+## Installation
+In your module/project build.gradle file add<br>
+```
+dependencies {
+   ...
+   implementation 'com.mahc.custombottomsheetbehavior:googlemaps-like:0.9.1'
+}
+```
+
+## Usage
+[![CustomBottomSheetBehavior](https://raw.githubusercontent.com/akan44/CustomBottomSheetBehavior/master/CustomBottomSheetBehaviorLikeGoogleMaps3states.gif)]<br><br>
+
+[Wiki under construction](https://github.com/miguelhincapie/CustomBottomSheetBehavior/wiki) but still with some info already, until I complete it you can take a look at the example (app module).<br><br>
+
+### Check the following files
+* [activity_main.xml](https://github.com/miguelhincapie/CustomBottomSheetBehavior/blob/master/app/src/main/res/layout/activity_main.xml) (is like a template)
+* [activity_main.java](https://github.com/miguelhincapie/CustomBottomSheetBehavior/blob/master/app/src/main/java/com/mahc/custombottomsheet/MainActivity.java) (you can see how to listen for states)
+* [styles.xml](https://github.com/miguelhincapie/CustomBottomSheetBehavior/blob/master/app/src/main/res/values/styles.xml) (just the line <style name="AppTheme.NoActionBar">)
+* [AndroidManifest.xml](https://github.com/miguelhincapie/CustomBottomSheetBehavior/blob/master/app/src/main/AndroidManifest.xml) (just the line android:theme="@style/AppTheme.NoActionBar")
 
 ## What I did?
 1. I took the code from BottomSheetBehavior.java from Support Library 23.4.0 and added one state for anchor mode, so now you have:<br>
@@ -12,20 +29,19 @@ STATE_DRAGGING<br>
 STATE_ANCHOR_POINT<br>
 STATE_EXPANDED.<br><br>
 
-2. Create Behaviors for FAB, ToolBars and ImageView.
+2. Created Behaviors for FAB, ToolBars and ImageView.
 
 
 ## Motivation
 Spend more than 3 days looking snipet of code or stackoverflow answers about it with no luck.
 
-## Help or improvements
+## Current state
+Trying to help/close issues.
+
+## Contributing
 Do you want to help?
 Wanna improve it?
-Go ahead!<br>
-Giving thx to @akaN44 and @vit001 for their contribution :D.
-
-## Current state
-Working on get parallax image behavior and toolbar like google maps.
+Go ahead! you can start in issues page<br>
 
 ## Question about it in StackOverflow
 
@@ -40,18 +56,13 @@ Related questions:<br>
 [Open an activity or fragment with Bottom Sheet Deep Linking](http://stackoverflow.com/questions/34243928/open-an-activity-or-fragment-with-bottom-sheet-deep-linking)<br>
 [BottomSheetDialogFragment - How to set expanded height (or min top offset)](http://stackoverflow.com/questions/36030879/bottomsheetdialogfragment-how-to-set-expanded-height-or-min-top-offset)
 
+## Credits
+* [Paul-Marie Tetedoie](https://github.com/akaN44)
+* [Vit Hradecky](https://github.com/vit001)
+
 ## License
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.<br><br>
+Licensed under the Apache License, Version 2.0
+<br><br>
 The true is I don't care about license... JUST USE IT, improve it if you can and give me vote up in stack overflow :D.
 
 
